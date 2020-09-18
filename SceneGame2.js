@@ -99,9 +99,9 @@ class SceneGame2 extends Phaser.Scene {
         this.physics.add.collider(bombs, platforms);
 
         //  Checks to see if the player overlaps with any of the stars, if he does call the collectStar function
-        this.physics.add.overlap(player, stars, collectStar, null, this);
+        this.physics.add.overlap(player, stars, collectStar2, null, this);
 
-        this.physics.add.collider(player, bombs, hitBomb, null, this);
+        this.physics.add.collider(player, bombs, hitBomb2, null, this);
     }
 
     update() {
@@ -140,7 +140,7 @@ class SceneGame2 extends Phaser.Scene {
     };
 };
 
-function collectStar (player, star)
+function collectStar2 (player, star)
     {
         star.disableBody(true, true);
 
@@ -172,7 +172,7 @@ function collectStar (player, star)
     }
 
 
-    function hitBomb (player, bomb)
+    function hitBomb2 (player, bomb)
     {
         this.physics.pause();
 
