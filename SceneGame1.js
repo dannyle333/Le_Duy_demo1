@@ -38,6 +38,7 @@ class SceneGame1 extends Phaser.Scene {
         platforms.create(600, 400, 'ground');
         platforms.create(50, 250, 'ground');
         platforms.create(750, 220, 'ground');
+        
 
         // The player and its settings
         player = this.physics.add.sprite(100, 450, 'dude');

@@ -36,8 +36,8 @@ class SceneGame2 extends Phaser.Scene {
 
         //  Now let's create some ledges
         platforms.create(600, 400, 'ground').setTint(0x242323);
-        platforms.create(50, 250, 'ground').setTint(0x242323);
-        platforms.create(750, 220, 'ground').setTint(0x242323);
+        platforms.create(50, 400, 'ground').setTint(0x242323);
+        platforms.create(375, 220, 'ground').setTint(0x242323);
 
         // The player and its settings
         player = this.physics.add.sprite(100, 450, 'dude');
@@ -115,13 +115,13 @@ class SceneGame2 extends Phaser.Scene {
 
         if (cursors.left.isDown)
         {
-            player.setVelocityX(-250);
+            player.setVelocityX(-300);
 
             player.anims.play('left', true);
         }
         else if (cursors.right.isDown)
         {
-            player.setVelocityX(250);
+            player.setVelocityX(300);
 
             player.anims.play('right', true);
         }
