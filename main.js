@@ -1,5 +1,3 @@
-//import SceneGame1 from 'SceneGame1.js';
-
 var config = {
     type: Phaser.AUTO,
     width: 800,
